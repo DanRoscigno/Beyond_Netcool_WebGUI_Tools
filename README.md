@@ -84,17 +84,20 @@ Tracing the Impacted service information
  
  Authentication
  --------------
- foo
+ I am out of the habit of including usernames and passwords in my code as I commit my code to places like GitHub.  I keep the secrets in config files that do not leave my server, in the code I put a comment with the format of the config file so that I have a record of how to do it the next time.  If you use Python I suggest that you look at ConfigParser.
  ![ConfigParser for auth](https://user-images.githubusercontent.com/25182304/33853621-8905d1f0-de8c-11e7-94f5-2e3675c3001f.png)
  
  Receiving data from the HTML form
  ---------------------------------
- foo
+ The QUERY STRING is standard CGI, and is the same as we have been doing in OMNIbus CGI tools for15 years.  Python provides some nice ways to traverse the string.
  ![Parsing the HTML form data](https://user-images.githubusercontent.com/25182304/33853625-8dbb3690-de8c-11e7-9bf1-65464451e365.png)
  
  A REST ObjectServer insert
  --------------------------
- foo
+ The format of the insert is intuitive, specify the names and types of the fields, and then the content of the row(s) that you want to insert.
  ![REST insert](https://user-images.githubusercontent.com/25182304/33853650-acbf9cc0-de8c-11e7-880e-48ab9292e6a5.png)
+ 
+ Here are examples from the REST API documentation:
+ https://ibm.co/2AdBodY
  
 
