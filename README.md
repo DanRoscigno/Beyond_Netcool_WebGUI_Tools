@@ -43,4 +43,19 @@ If you are using the DASH/Jazz for Service Management web server that comes with
 CGI files already have a home
 =============================
 
-pop your file in place, then register it with Web GUI as always (ping me if you need a howto)
+Pop your file in place in the standard cgi-bin dir (on my system it is /opt/IBM/netcool/gui/omnibus_webgui/etc/cgi-bin; just try *find /opt/IBM -name cgi-bin*), then register it with Web GUI as always (ping me if you need a howto)
+
+Where are we?
+=============
+
+We have a place to put HTML files (*myBox*)
+We have a place to put CGI files (*standard Web GUI cgi-bin dir*)
+We have a simple HTML form (testing.html is in this git repo)
+
+Questions?
+==========
+
+Reading from the ObjectServer
+=============================
+
+
