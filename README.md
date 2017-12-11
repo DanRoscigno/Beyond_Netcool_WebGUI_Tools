@@ -14,6 +14,7 @@ The form above is nothing fancy, but are the things it gave me:
  
  ![Dropdown List Detail](https://user-images.githubusercontent.com/25182304/33849876-f8dab098-de7f-11e7-8d76-b16b3d7ad01b.png)
 
+ - The REST API connects via the omni.dat / interfaces file, which means it connects to a virtual pair without writing in your own failover /failback routine
 
 HTML forms need a place to live
 ===============================
