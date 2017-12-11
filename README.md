@@ -97,7 +97,6 @@ Tracing the Impacted service information
  The format of the insert is intuitive, specify the names and types of the fields, and then the content of the row(s) that you want to insert.
  ![REST insert](https://user-images.githubusercontent.com/25182304/33853650-acbf9cc0-de8c-11e7-880e-48ab9292e6a5.png)
  
- Here are examples from the REST API documentation:
- https://ibm.co/2AdBodY
+ Here are examples from the <a href="https://ibm.co/2AdBodY" target="_blank">REST API documentation</a> 
  
 
