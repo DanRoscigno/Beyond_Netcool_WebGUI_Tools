@@ -73,7 +73,12 @@ Over in the CGI I read the contents of the environment and parse the QUERY_STRIN
 
 ![Reading the Form data](https://user-images.githubusercontent.com/25182304/33856718-0225a4c0-de97-11e7-9cae-801614ae202f.png)
 
+Next (still in the CGI), I specify the ObjecServer fields that I will write to when I insert.  I specify a field named *application* here as a string.  In my schema, the application is the service name.
+
 ![Specifying the ObjectServer fields to write](https://user-images.githubusercontent.com/25182304/33856720-02426eb6-de97-11e7-8d5e-d9061b17be4e.png)
+
+
+And then, still in the CGI I use the contents of the variable Service in the insert.
 
 ![Setting the content of the applicationfield](https://user-images.githubusercontent.com/25182304/33856721-024f0676-de97-11e7-997e-40adba569fe1.png)
 
