@@ -1,7 +1,8 @@
 # Beyond_Netcool_WebGUI_Tools
 The basic tool types don't always get you where you need to go.  Sometimes you need form validation, or you want to pre-populate form items programatically.  Maybe you want to run selects against ObjectServer tables.  Use some CGI, someHTML, and some REST calls to the ObjectServer to get the job done.  This is a simple example thatsolves a real problem for my customer.
 
-**Let's start at the end, here is what I built:**
+Let's start at the end, here is what I built
+============================================
 ![Initiate SWAT HTML Form](https://user-images.githubusercontent.com/25182304/33849871-f4e6a5a0-de7f-11e7-9b8e-4b23b49dadb6.png)
 
 The form above is nothing fancy, but are the things it gave me:
@@ -14,7 +15,8 @@ The form above is nothing fancy, but are the things it gave me:
  ![Dropdown List Detail](https://user-images.githubusercontent.com/25182304/33849876-f8dab098-de7f-11e7-8d76-b16b3d7ad01b.png)
 
 
-**HTML forms need a place to live**
+HTML forms need a place to live
+===============================
 
 If you are using the DASH/Jazz for Service Management web server that comes with WebSphere Application Server you can add HTML files to the "myBox" directory. Here is a quick lesson:
 
@@ -38,6 +40,7 @@ If you are using the DASH/Jazz for Service Management web server that comes with
  - For example, my filename is initiateSWAT.html, so: https://1.2.3.4:16311/myBox/initiateSWAT.html
 
 
-**CGI files already have a home**
+CGI files already have a home
+=============================
 
 pop your file in place, then register it with Web GUI as always (ping me if you need a howto)
