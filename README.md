@@ -67,11 +67,16 @@ The HTML form that we have been looking at is used by a person to report an issu
  Authentication
  --------------
  foo
+ ![ConfigParser for auth](https://user-images.githubusercontent.com/25182304/33853621-8905d1f0-de8c-11e7-94f5-2e3675c3001f.png)
+ 
  Receiving data from the HTML form
  ---------------------------------
  foo
+ ![Parsing the HTML form data](https://user-images.githubusercontent.com/25182304/33853625-8dbb3690-de8c-11e7-9bf1-65464451e365.png)
+ 
  A REST ObjectServer insert
  --------------------------
  foo
+ ![REST insert](https://user-images.githubusercontent.com/25182304/33853650-acbf9cc0-de8c-11e7-880e-48ab9292e6a5.png)
  
 
