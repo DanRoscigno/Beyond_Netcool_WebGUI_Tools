@@ -59,6 +59,8 @@ Writing to the ObjectServer
 ===========================
 The HTML form that we have been looking at is used by a person to report an issue (think about customer care, they receive a call and typically open a ticket.  In my case they are filling out a form that inserts an event into the ObjectServer rather than creating a ticket.  In the past, people would often call nco_sql to insert an event from a CGI, or use a Perl lib, or Sybase Jconnect.  I have used all of the above, but I prefer to use the REST API, so let's take a look at that from a Python CGI.  The full script is in this repo at InitiateSWATTEST.cgi
 
+Before we dive in and look at all of the details, let's trace one bit of information.  In the HTML form one of the form components is the drop down list of products (Product A SaaS, B, C, etc.).
+
 **Let's look at:**
  - Authentication
  - Receiving data from the HTML form
