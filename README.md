@@ -11,6 +11,7 @@ If you are using the DASH/Jazz for Service Management web server that comes with
 
  - CD into the myBox dir
 
+        find /opt/IBM -name myBox
         cd ... wherever.../JazzSM/ui/myBox/
 
  - Edit your html files in myBox/web_files/
