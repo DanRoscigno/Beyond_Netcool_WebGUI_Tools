@@ -99,4 +99,18 @@ Tracing the Impacted service information
  
  Here are examples from the <a href="https://ibm.co/2AdBodY" target="_blank">REST API documentation</a> 
  
+Now where are we?
+=================
+- Once the user submits the form the CGI POSTs a new row to the ObjectServer
+- A trigger then sends a POST to Alert Notification, which alerts the Site Reliability Engineering (SRE) folks
+- An SRE then:
+    - creates a Slack channel
+    - pages the DevOps team
+
+What could be done to streamline this?
+=================
+- Once the user submits the form the CGI
+   - POSTs a new channel to the Slack Team
+   - POSTs a new row to the ObjectServer with the form info and Slack channel
+   - POSTs an alert to Alert Notification for the DevOps team to join the Slack channel
 
