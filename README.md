@@ -49,9 +49,9 @@ Pop your file in place in the standard cgi-bin dir (on my system it is /opt/IBM/
 Where are we?
 =============
 
-We have a place to put HTML files (*myBox*)
-We have a place to put CGI files (*standard Web GUI cgi-bin dir*)
-We have a simple HTML form (testing.html is in this git repo)
+- We have a place to put HTML files (*myBox*)
+- We have a place to put CGI files (*standard Web GUI cgi-bin dir*)
+- We have a simple HTML form (testing.html is in this git repo)
 
 Questions?
 ==========
