@@ -5,12 +5,12 @@ Let's start at the end, here is what I built
 ============================================
 ![Initiate SWAT HTML Form](https://user-images.githubusercontent.com/25182304/33861720-5ff6633a-dead-11e7-834a-73fd7a504a76.png)
 
-The form above is nothing fancy, but here are the things it gave me:
+Using an HTML form and the OMNIbus REST API via CGI gave me:
  - A place to give the user instructions
  - The ability to pre-populate the time in GMT (I found that users routinely used local time, which messes up my SLA record keeping)
  
  ![GMT Detail](https://user-images.githubusercontent.com/25182304/33849888-0178fc78-de80-11e7-9f14-c077e8b80b4d.png)
- - The ability to have a non-selectable default choice in a drop down list (I found that with the default tools I ended up paging out the wrong DevOps teams very often because the user requesting the page out would accept the default)
+ - The ability to have a non-selectable default choice in a drop down list (I found that with the default tools I ended up paging out the wrong DevOps teams very often because the user requesting the page out would accept the default.  This is actually the issue that pushed me to switch from the default Web GUI tools as the wrong DevOps team was getting woken up.)
  
  ![Dropdown List Detail](https://user-images.githubusercontent.com/25182304/33861871-04caf9ca-deae-11e7-9558-c09d917a5cda.png)
 
