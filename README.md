@@ -58,7 +58,7 @@ Questions?
 
 Writing to the ObjectServer
 ===========================
-The HTML form that we have been looking at is used by a person to report an issue (think about customer care, they receive a call and typically open a ticket.  In my case they are filling out a form that inserts an event into the ObjectServer rather than creating a ticket.  In the past, people would often call nco_sql to insert an event from a CGI, or use a Perl lib, or Sybase Jconnect.  I have used all of the above, but I prefer to use the REST API, so let's take a look at that from a Python CGI.  The full script is in this repo at InitiateSWATTEST.cgi
+The HTML form that we have been looking at is used by a person to report an issue (think about customer care, they receive a call and typically open a ticket.  In my case they are filling out a form that posts **(note the term *POST* rather than *insert* as I am using the REST API and therefore REST terminology)** an event into the ObjectServer rather than creating a ticket.  In the past, people would often call nco_sql to insert an event from a CGI, or use a Perl lib, or Sybase Jconnect.  I have used all of the above, but I prefer to use the REST API, so let's take a look at that from a Python CGI.  The full script is in this repo at InitiateSWATTEST.cgi
 
 Before we dive in and look at all of the details, let's trace one bit of information.  In the HTML form one of the form components is the drop down list of products (Product A SaaS, B, C, etc.)
 
@@ -71,16 +71,16 @@ Tracing the Impacted service information
  - Over in the CGI I read the contents of the environment and parse the QUERY_STRING, which contains the information from the HTML form
 ![Reading the Form data](https://user-images.githubusercontent.com/25182304/33856718-0225a4c0-de97-11e7-9cae-801614ae202f.png)
 
- - Next (still in the CGI), I specify the ObjecServer fields that I will write to when I insert.  I specify a field named *application* here as a string.  In my schema, the application is the service name.
+ - Next (still in the CGI), I specify the ObjecServer fields that I will write to when I POST.  I specify a field named *application* here as a string.  In my schema, the application is the service name.
 ![Specifying the ObjectServer fields to write](https://user-images.githubusercontent.com/25182304/33856720-02426eb6-de97-11e7-8d5e-d9061b17be4e.png)
 
- - And then, still in the CGI I use the contents of the variable Service in the insert.
+ - And then, still in the CGI I use the contents of the variable Service in the POST.
 ![Setting the content of the applicationfield](https://user-images.githubusercontent.com/25182304/33856721-024f0676-de97-11e7-997e-40adba569fe1.png)
 
 **Let's look at:**
  - Authentication
  - Receiving data from the HTML form
- - A REST ObjectServer insert
+ - A REST ObjectServer POST
  
  Authentication
  --------------
@@ -92,10 +92,10 @@ Tracing the Impacted service information
  The QUERY STRING is standard CGI, and is the same as we have been doing in OMNIbus CGI tools for15 years.  Python provides some nice ways to traverse the string.
  ![Parsing the HTML form data](https://user-images.githubusercontent.com/25182304/33853625-8dbb3690-de8c-11e7-9bf1-65464451e365.png)
  
- A REST ObjectServer insert
+ A REST ObjectServer POST
  --------------------------
- The format of the insert is intuitive, specify the names and types of the fields, and then the content of the row(s) that you want to insert.
- ![REST insert](https://user-images.githubusercontent.com/25182304/33853650-acbf9cc0-de8c-11e7-880e-48ab9292e6a5.png)
+ The format of the POST is intuitive, specify the names and types of the fields, and then the content of the row(s) that you want to POST.
+ ![REST POST](https://user-images.githubusercontent.com/25182304/33853650-acbf9cc0-de8c-11e7-880e-48ab9292e6a5.png)
  
  Here are examples from the <a href="https://ibm.co/2AdBodY" target="_blank">REST API documentation</a> 
  
