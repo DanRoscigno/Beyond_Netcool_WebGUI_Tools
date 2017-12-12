@@ -12,7 +12,7 @@ The form above is nothing fancy, but are the things it gave me:
  ![GMT Detail](https://user-images.githubusercontent.com/25182304/33849888-0178fc78-de80-11e7-9f14-c077e8b80b4d.png)
  - The ability to have a non-selectable default choice in a drop down list (I found that with the default tools I ended up paging out the wrong DevOps teams very often because the user requesting the page out would accept the default)
  
- ![Dropdown List Detail](https://user-images.githubusercontent.com/25182304/33849876-f8dab098-de7f-11e7-8d76-b16b3d7ad01b.png)
+ ![Dropdown List Detail](https://user-images.githubusercontent.com/25182304/33861871-04caf9ca-deae-11e7-9558-c09d917a5cda.png)
 
  - The REST API connects via the omni.dat / interfaces file, which means it connects to a virtual pair without writing in your own failover /failback routine
 
@@ -32,13 +32,13 @@ If you are using the DASH/Jazz for Service Management web server that comes with
 
  - Edit your html files in myBox/web_files/
 
- - Deploy your files Note: enclose the smadmin password in doublequotes and escape those special chars
+ - Deploy your files Note: enclose the smadmin password in double quotes and escape those special chars
 
         ./deployMyBox.sh -username smadmin -password "C\$tfood"
 
  - This is then the URL: https://1.2.3.4:16311/myBox/yourfile.html
 
- - For example, my filename is initiateSWAT.html, so: https://1.2.3.4:16311/myBox/initiateSWAT.html
+ - For example, my filename is testing.html, so: https://1.2.3.4:16311/myBox/testing.html
 
 
 CGI files already have a home
