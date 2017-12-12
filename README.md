@@ -5,7 +5,7 @@ Let's start at the end, here is what I built
 ============================================
 ![Initiate SWAT HTML Form](https://user-images.githubusercontent.com/25182304/33861720-5ff6633a-dead-11e7-834a-73fd7a504a76.png)
 
-The form above is nothing fancy, but are the things it gave me:
+The form above is nothing fancy, but here are the things it gave me:
  - A place to give the user instructions
  - The ability to pre-populate the time in GMT (I found that users routinely used local time, which messes up my SLA record keeping)
  
